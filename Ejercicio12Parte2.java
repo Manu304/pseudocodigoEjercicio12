@@ -15,14 +15,14 @@ public class Ejercicio12Parte2 {
 
         do{
             Scanner scanner = new Scanner(System.in);
-            System.out.print("Ingrese la altura de la persona");
+            System.out.print("Ingrese la altura de la persona: ");
             altura = scanner.nextFloat();
             if (altura > 0) {
                 int edad;
                 char sexo;
-                System.out.print("Ingrese la edad de la persona");
+                System.out.print("Ingrese la edad de la persona: ");
                 edad = scanner.nextInt();
-                System.out.print("Ingrese el sexo de la persona (F/M)");
+                System.out.print("Ingrese el sexo de la persona (F/M): ");
                 sexo = scanner.next().toUpperCase().charAt(0);
 
                 if (sexo == 'F') {
@@ -36,6 +36,8 @@ public class Ejercicio12Parte2 {
                 }else{
                     System.out.println("No ingresado. Escriba un sexo valido");
                 }
+            }else{
+                System.out.println("Se termino la lectura de datos");
             }
         }while (altura != 0);
         alturaMP = (float) alturaMT/alturaMC;
